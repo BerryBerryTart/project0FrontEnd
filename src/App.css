@@ -57,6 +57,7 @@ hr {
 #accountContainer{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .accountElement{
