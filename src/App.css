@@ -1,23 +1,75 @@
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
- #clientElement{
-     width: 200px;
- }
 
- #clientList {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
- }
+#navBox{
+    text-align: center;
+    margin: 10px;
+}
+
+hr {
+    width: 80%;
+}
+
+.navElement{
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.clientElement{
+    width: 250px;
+    margin: 10px;
+    padding: 4px;
+    background-color: #e5d9fa ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #ccc3db;
+    height: 100%;
+}
+
+#clientList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#clientView {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#accountContainer{
+    width: 100%;
+    display: flex;
+}
+
+.accountElement{
+    width: 250px;
+    margin: 20px;
+    padding: 4px;
+    background-color: #cdccff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #bfbee6;
+}
+
+ul {
+    list-style-type: none;
+    padding:0px;
+    margin:10px;
+}

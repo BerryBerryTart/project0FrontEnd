@@ -4,10 +4,10 @@ import FormatDate from '../Util/FormatDate';
 function Client(props){
     let c = props.client;
     return(
-    <div id="clientElement">
+    <div className="clientElement">
         <ul>
-            <li>{c.fName} {c.lName}</li>
-            <li>Joined: {<FormatDate created={c.joined} />}</li>
+            <li><b>Name:</b> {c.fName} {c.lName}</li>
+            <li><b>Joined:</b> {<FormatDate created={c.joined} />}</li>
             <a href={"/clients/" + c.id}>More Details</a>
         </ul>
     </div>

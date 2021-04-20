@@ -16,13 +16,21 @@ export default function ClientView(){
         fetchData();
     }, [id]);
     return(
-        <div>
-        <ul>
-            <li>{data.fName} {data.lName}</li>
-            <li>Joined: {data.joined}</li>
-            {data.accounts && data.accounts.length > 0 && <li>Accounts:</li>}
-            {data.accounts && data.accounts.map((acc, i) => <Account key={i} account={acc} />)}
-        </ul>
+        <div  id="clientView">
+        <h1>Account Overview</h1>
+            <div className="clientElement">
+                <ul>
+                    <li><b>Name:</b> {data.fName} {data.lName}</li>
+                    <li><b>Joined:</b> {data.joined}</li>
+                </ul>
+            </div>
+            {data.accounts && data.accounts.length > 0 && <h2>Accounts:</h2>}
+            {data.accounts && data.accounts.length > 0 && <hr />}
+            <ul>
+                <div id="accountContainer">
+                    {data.accounts && data.accounts.map((acc, i) => <li><Account key={i} account={acc} /></li>)}
+                </div>
+            </ul>
         </div>
     );
 }

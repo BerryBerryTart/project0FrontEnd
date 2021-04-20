@@ -15,8 +15,11 @@ function App() {
     return (
         <div className="App">
             <Router>
-                <Link to="/">Home</Link>
-                <Link to="/clients">Clients</Link>
+                <div id="navBox">
+                    <Link className="navElement" to="/">Home</Link>
+                    <Link className="navElement" to="/clients">Clients</Link>
+                </div>
+                <hr />
                 <Switch>
                     <Route exact path="/">
                         <Redirect to="/clients" />

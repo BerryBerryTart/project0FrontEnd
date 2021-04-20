@@ -7,12 +7,12 @@ export default function Account(props){
     let balance = formatter.format(acc.balance);
 
     return(
-    <div>
+    <div className="accountElement">
         <ul>
-            <li>Balance: {balance}</li>
-            <li>Account Type: {acc.type}</li>
-            <li>Account Number: {acc.acc_num}</li>
-            <li>Created: {<FormatDate created={acc.created} />}</li>
+            <li><b>Balance:</b> {balance}</li>
+            <li><b>Account Type:</b> {acc.type}</li>
+            <li><b>Account Number:</b> {acc.acc_num}</li>
+            <li><b>Created:</b> {<FormatDate created={acc.created} />}</li>
         </ul>
         <br />
     </div>
