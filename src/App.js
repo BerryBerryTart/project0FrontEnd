@@ -17,17 +17,17 @@ function App() {
             <Router>
                 <div id="navBox">
                     <Link className="navElement" to="/">Home</Link>
-                    <Link className="navElement" to="/clients">Clients</Link>
+                    <Link className="navElement" to="/client">Clients</Link>
                 </div>
                 <hr />
                 <Switch>
                     <Route exact path="/">
-                        <Redirect to="/clients" />
+                        <Redirect to="/client" />
                     </Route>
-                    <Route exact path="/clients">
+                    <Route exact path="/client">
                         <ClientList />
                     </Route>
-                    <Route exact path="/clients/:id">
+                    <Route exact path="/client/:id">
                         <ClientView />
                     </Route>
                 </Switch>

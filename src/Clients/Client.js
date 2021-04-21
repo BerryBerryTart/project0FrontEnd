@@ -8,7 +8,7 @@ function Client(props){
         <ul>
             <li><b>Name:</b> {c.fName} {c.lName}</li>
             <li><b>Joined:</b> {<FormatDate created={c.joined} />}</li>
-            <a href={"/clients/" + c.id}>More Details</a>
+            <a href={"/client/" + c.id}>More Details</a>
         </ul>
     </div>
     );
